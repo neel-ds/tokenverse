@@ -17,6 +17,7 @@ import NFTABI from "../utils/NFTABI.json";
 import { useToast } from "@chakra-ui/react";
 import { contractAddress, NFTContractAddress } from "@/utils/constants";
 import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
+import { BigNumber, ethers } from "ethers";
 
 const Dashboard = () => {
   const [name, setName] = useState("");
@@ -24,7 +25,7 @@ const Dashboard = () => {
   const [supply, setSupply] = useState("");
   const [imageUrl, setImageUrl] = useState("");
   const [image, setImage] = useState("");
-  const [price, setPrice] = useState();
+  const [price, setPrice] = useState("0");
   const [uri, setUri] = useState("");
   const [maxSupplyFlag, setMaxSupplyFlag] = useState(true);
 
@@ -40,7 +41,7 @@ const Dashboard = () => {
       uri,
       supply,
       maxSupplyFlag == true ? 0 : 1,
-      parseInt(price),
+      ethers.utils.parseEther(price || 0),
       address,
     ],
 

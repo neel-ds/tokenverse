@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { useRouter } from "next/router";
+import { utils, BigNumber } from "ethers";
 
 export default function NFTDetails(nftData) {
   const { name, description, image, price } = nftData;
@@ -48,7 +49,7 @@ export default function NFTDetails(nftData) {
             mb={2}
           >
             <Text fontSize={"xs"} fontWeight="medium">
-              {price}
+              {utils.formatEther(BigNumber.from(price ?? 0)) ?? "0"}
             </Text>
           </Box>
           </Box>

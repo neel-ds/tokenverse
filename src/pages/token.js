@@ -15,13 +15,13 @@ import ABI from "../utils/ABI.json";
 import { useToast } from "@chakra-ui/react";
 import { contractAddress } from "@/utils/constants";
 import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
-import { BigNumber } from "ethers";
+import { BigNumber, ethers } from "ethers";
 
 const Dashboard = () => {
   const [name, setName] = useState("");
   const [symbol, setSymbol] = useState("");
-  const [supply, setSupply] = useState("");
-  const [totalCap, setTotalCap] = useState("");
+  const [supply, setSupply] = useState("0");
+  const [totalCap, setTotalCap] = useState("0");
   const [whitelist, setWhitelist] = useState([]);
   const [capFlag, setCapFlag] = useState(true);
   const [supplyFlag, setSupplyFlag] = useState(true);
@@ -39,18 +39,19 @@ const Dashboard = () => {
       name,
       symbol,
       capFlag,
-      totalCap,
+      ethers.utils.parseEther(totalCap || "0"),
       supplyFlag,
-      supply,
+      ethers.utils.parseEther(supply || "0"),
       whitelist,
     ],
     overrides: {
-      value: 1000,
+      value: ethers.utils.parseEther("0.0001"),
     },
     onError: (error) => {
       console.log("Error", error);
     },
     onSuccess: (result) => {
+      console.log(ethers.utils.parseEther(totalCap || "0"));
       console.log("Success", result);
     },
   });
