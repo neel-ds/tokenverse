@@ -41,7 +41,7 @@ const Dashboard = () => {
       uri,
       supply,
       maxSupplyFlag == true ? 0 : 1,
-      ethers.utils.parseEther(price || 0),
+      ethers.utils.parseEther(price || "0"),
       address,
     ],
 
