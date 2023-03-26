@@ -78,13 +78,13 @@ const Dashboard = () => {
     <Layout>
       <Head>
         <title>Dashboard</title>
-        <meta name="description" content="coinverse" />
+        <meta name="description" content="tokenverse" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col w-full pl-[80px] lg:pl-0 pb-10 md:pr-5">
         <div className="flex space-x-2 items-center mb-10 justify-center md:justify-start">
-          <Image src="/dashboard-icon.svg" width="25" height="25" alt="Icon" />
+          <Image src="/dashboard.webp" width="35" height="35" alt="Icon" />
           <h1 className="text-[#1e1e1e] font-semibold text-xl dark:text-[#cccae3]">
             DASHBOARD
           </h1>

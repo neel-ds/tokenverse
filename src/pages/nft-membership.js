@@ -102,7 +102,7 @@ const Dashboard = () => {
     <Layout>
       <Head>
         <title>Create NFT</title>
-        <meta name="description" content="coinverse" />
+        <meta name="description" content="tokenverse" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -150,7 +150,7 @@ const Dashboard = () => {
             id="name"
             name="name"
             label="Name"
-            placeholder="Coinverse DAO"
+            placeholder="Tokenverse DAO"
             type="text"
             onChange={(e) => setName(e.target.value)}
             helper="This Can Be Your DAO Name or Special Access Collection"
@@ -159,7 +159,7 @@ const Dashboard = () => {
             id="description"
             name="description"
             label="Description"
-            placeholder="Coinverse DAO Memberships"
+            placeholder="Tokenverse DAO Memberships"
             type="text"
             onChange={(e) => setDescription(e.target.value)}
             helper="Write Something About This NFT or Features"
@@ -183,10 +183,10 @@ const Dashboard = () => {
             id="price"
             name="price"
             label="Price"
-            placeholder="1 5IRE"
+            placeholder="0.05 ETH"
             type="number"
             onChange={(e) => setPrice(e.target.value)}
-            helper="Recommend initial NFT Price - 2 5IRE, No '5IRE' Symbol Required."
+            helper="Recommend initial NFT Price - 2 BIT, No 'ETH' Symbol Required."
           />
           <button
             onClick={async (e) => {
