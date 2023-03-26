@@ -42,8 +42,8 @@ const Card = ({ heading, title, img, link, color }) => {
 const headers = [
   "Name",
   "Symbol",
-  "Total Supply (in Wei)",
-  "Total Cap (in Wei)",
+  "Total Supply (in ETH)",
+  "Total Cap (in ETH)",
   "",
 ];
 

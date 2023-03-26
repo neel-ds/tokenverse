@@ -51,5 +51,5 @@ export const client = createClient(
   getDefaultClient({
     autoConnect: true,
     appName: 'TokenVerse',
-    chains: [mantle, optimism, zkevm, scroll],
+    chains: [scroll, mantle, zkevm],
   }));

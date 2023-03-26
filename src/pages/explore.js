@@ -35,7 +35,7 @@ export default function Products() {
         name: pd.name,
         description: pd.description,
         image: pd.image,
-        price: parseFloat(nft.nftPrice)
+        price: nft.nftPrice
       });
     }
     setProductData(nfts);

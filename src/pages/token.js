@@ -20,8 +20,8 @@ import { BigNumber, ethers } from "ethers";
 const Dashboard = () => {
   const [name, setName] = useState("");
   const [symbol, setSymbol] = useState("");
-  const [supply, setSupply] = useState("");
-  const [totalCap, setTotalCap] = useState("");
+  const [supply, setSupply] = useState("0");
+  const [totalCap, setTotalCap] = useState("0");
   const [whitelist, setWhitelist] = useState([]);
   const [capFlag, setCapFlag] = useState(true);
   const [supplyFlag, setSupplyFlag] = useState(true);
@@ -39,9 +39,9 @@ const Dashboard = () => {
       name,
       symbol,
       capFlag,
-      totalCap,
+      ethers.utils.parseEther(totalCap || "0"),
       supplyFlag,
-      supply,
+      ethers.utils.parseEther(supply || "0"),
       whitelist,
     ],
     overrides: {
@@ -51,6 +51,7 @@ const Dashboard = () => {
       console.log("Error", error);
     },
     onSuccess: (result) => {
+      console.log(ethers.utils.parseEther(totalCap || "0"));
       console.log("Success", result);
     },
   });

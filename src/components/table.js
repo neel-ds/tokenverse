@@ -1,4 +1,5 @@
 import React from "react";
+import { BigNumber, utils } from "ethers";
 
 const Table = ({ headers, data }) => {
   return (
@@ -36,12 +37,12 @@ const Table = ({ headers, data }) => {
                 </td>
                 <td className="px-4 py-4 text-sm whitespace-nowrap">
                   <div className="text-gray-700 dark:text-gray-200">
-                    {i.totalSupply}
+                    {utils.formatEther(BigNumber.from(i.totalSupply ?? 0))}
                   </div>
                 </td>
                 <td className="px-4 py-4 text-sm whitespace-nowrap">
                   <div className="text-gray-700 dark:text-gray-200">
-                    {i.totalCap}
+                    {utils.formatEther(BigNumber.from(i.totalCap ?? 0))}
                   </div>
                 </td>
 
