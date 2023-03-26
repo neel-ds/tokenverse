@@ -90,7 +90,7 @@ const Support = () => {
                         color="gray.700"
                         leftIcon={<MdEmail color="#363636" size="30px" />}
                       >
-                        support@coinverse.in
+                        help@tokenverse.us
                       </Button>
                       <Button
                         size="md"
@@ -100,7 +100,7 @@ const Support = () => {
                         color="gray.700"
                         leftIcon={<MdLocationOn color="#363636" size="30px" />}
                       >
-                        Gujarat, India
+                        Mumbai, India
                       </Button>
                     </VStack>
                   </Box>

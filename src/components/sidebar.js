@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Tooltip } from "@chakra-ui/react";
 import { HiUserGroup } from "react-icons/hi";
 import { AiOutlineHome } from "react-icons/ai";
-import { MdSpaceDashboard } from "react-icons/md"
 import { RiCustomerService2Fill } from "react-icons/ri"
 import { MdOutlineExplore } from "react-icons/md"
+import { Image } from "@chakra-ui/react"
 
 const Sidebar = () => {
   return (
@@ -18,7 +18,7 @@ const Sidebar = () => {
                 href="/"
                 className="flex justify-center sm:justify-start items-center py-2"
               >
-                <AiOutlineHome size={25} />
+                <Image src='/tokenverse.png' alt="tokenverse" size={20} />
               </Link>
             </Tooltip>
           </li>
@@ -28,7 +28,7 @@ const Sidebar = () => {
                 href="dashboard"
                 className="flex justify-center sm:justify-start items-center py-2"
               >
-                <MdSpaceDashboard size={25} />
+                <AiOutlineHome size={25} />
               </Link>
             </Tooltip>
           </li>

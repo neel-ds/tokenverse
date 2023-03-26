@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Coinverse</title>
-        <meta name="description" content="coinverse" />
+        <title>Tokenverse</title>
+        <meta name="description" content="tokenverse" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -19,14 +19,14 @@ export default function Home() {
             <div className="flex justify-center flex-row">
               <div className="flex flex-col justify-between text-center h-[100vh] py-10 md:py-32">
                 <Image
-                  src="/coinverse.png"
+                  src="/tokenverse.png"
                   width="100"
                   height="100"
                   className="mx-auto animate__animated animate__zoomIn"
-                  alt="coinverse"
+                  alt="tokenverse"
                 />
                 <h1 className="text-4xl sm:text-5xl mt-[-3rem] font-extrabold text-[#E4E4ED] animate__animated animate__zoomIn">
-                  coinverse
+                  tokenverse
                 </h1>
                 <div className="text-4xl tracking-tight font-extrabold text-[#E4E4ED] sm:text-5xl md:text-7xl lg:px-32 space-y-5">
                   <h2 className="animate__animated animate__slideInRight">
@@ -41,7 +41,7 @@ export default function Home() {
                   </h3>
                 </div>
                 <div className="animate__animated animate__pulse">
-                  <GradientButton link="/dashboard" title="Use coinverse" />
+                  <GradientButton link="/dashboard" title="Use tokenverse" />
                 </div>
               </div>
             </div>
@@ -67,14 +67,14 @@ export default function Home() {
             <div className="flex flex-col justify-center md:h-[100vh] md:mt-[-10] lg:px-32 overflow-hidden">
               <AnimationOnScroll animateIn="animate__zoomIn">
                 <Image
-                  src="/product.png"
+                  src="/tProduct.png"
                   width="300"
                   height="100"
                   alt="coindeck"
                   className="absolute w-[150px] md:w-[300px] left-[50%] mt-[-250px] md:mt-[-250px] md:left-auto z-20 border rounded-3xl drop-shadow-[0_35px_40px_rgba(0,0,0,1)]"
                 />
                 <Image
-                  src="/product.png"
+                  src="/tProduct.png"
                   width="300"
                   height="100"
                   alt="coindeck"
@@ -88,7 +88,7 @@ export default function Home() {
               <AnimationOnScroll animateIn="animate__slideInRight">
                 <h2 className="text-3xl font-medium text-[#E4E4ED] sm:text-5xl block">
                   <p>DAOs & Guilds</p>
-                  <p>build with Coinverse</p>
+                  <p>build with tokenverse</p>
                 </h2>
               </AnimationOnScroll>
               <AnimationOnScroll animateIn="animate__slideInRight">
@@ -109,14 +109,14 @@ export default function Home() {
               <AnimationOnScroll animateIn="animate__slideInLeft">
                 <div className="flex items-center space-x-3 max-w-[360px] w-full">
                   <div className="w-full">
-                    <p className="text-sm text-[#008dff]">POWERFUL</p>
-                    <p className="text-4xl font-medium">Integrations</p>
+                    <p className="text-sm text-[#008dff]">COMPATIBLE</p>
+                    <p className="text-4xl font-medium">Networks</p>
                   </div>
                 </div>
                 <div className="flex space-x-4">
                   <div className="bg-[#39376C] w-[60px] h-[60px] flex items-center justify-center p-[5px] rounded-full">
                     <Image
-                      src="/developer-dao.webp"
+                      src="/scroll.png"
                       width="60"
                       height="60"
                       alt="icon"
@@ -124,7 +124,7 @@ export default function Home() {
                   </div>
                   <div className="bg-[#39376C] w-[60px] h-[60px] flex items-center justify-center p-[5px] rounded-full">
                     <Image
-                      src="/superteam.jpeg"
+                      src="/optimism.png"
                       className="overflow-hidden rounded-full"
                       width="60"
                       height="60"
@@ -132,7 +132,22 @@ export default function Home() {
                     />
                   </div>
                   <div className="bg-[#39376C] w-[60px] h-[60px] flex items-center justify-center p-[5px] rounded-full">
-                    <Image src="/hyd.webp" width="60" height="60" alt="icon" />
+                  <Image
+                      src="/zkevm.png"
+                      className="overflow-hidden rounded-full"
+                      width="60"
+                      height="60"
+                      alt="icon"
+                    />
+                  </div>
+                  <div className="bg-[#39376C] w-[60px] h-[60px] flex items-center justify-center p-[5px] rounded-full">
+                    <Image
+                      src="/mantle.svg"
+                      className="overflow-hidden rounded-full"
+                      width="60"
+                      height="60"
+                      alt="icon"
+                    />
                   </div>
                 </div>
               </AnimationOnScroll>
@@ -161,14 +176,14 @@ export default function Home() {
               <AnimationOnScroll animateIn="animate__slideInLeft">
                 <div className="flex items-center space-x-3 max-w-[360px] w-full">
                   <div className="w-full">
-                    <p className="text-sm text-[#008dff]">COMPATIBLE</p>
-                    <p className="text-4xl font-medium">Networks</p>
+                    <p className="text-sm text-[#008dff]">POWERFUL</p>
+                    <p className="text-4xl font-medium">Integrations</p>
                   </div>
                 </div>
                 <div className="flex space-x-2">
                   <div className="bg-[#39376C] w-[60px] h-[60px] flex items-center justify-center p-[5px] rounded-full">
                     <Image
-                      src="/5ire.jpeg"
+                      src="/polygon.png"
                       className="overflow-hidden rounded-full"
                       width="60"
                       height="60"
@@ -215,10 +230,10 @@ export default function Home() {
                     </div>
                     <div className="bg-[#39376C] w-[60px] h-[60px] flex items-center justify-center p-[5px] rounded-full">
                       <Image
-                        src="/web3auth.png"
-                        className="overflow-hidden rounded-full"
-                        width="60"
-                        height="60"
+                        src="/coinbase.png"
+                        className="w-30 overflow-hidden"
+                        width="100"
+                        height="70"
                         alt="icon"
                       />
                     </div>
